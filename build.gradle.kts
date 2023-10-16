@@ -24,5 +24,5 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-    System.setProperty("selenide.headless", System.getProperty("selenide.headless"));
+    systemProperties["selenide.headless"] = System.getProperty("selenide.headless")
 }
